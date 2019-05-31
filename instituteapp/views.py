@@ -6,6 +6,7 @@ from django.http.response  import HttpResponse
 #from django.http.response import HttpResponse
 import datetime
 #added demo to git
+#added demo from pycharm to git
 date1=datetime.datetime.now()
 # Create your views here.
 def main_page(request):
