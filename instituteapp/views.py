@@ -8,6 +8,7 @@ import datetime
 #added demo to git
 #added demo from pycharm to git
 #added from git to pycharm
+#added from pyharm to git
 date1=datetime.datetime.now()
 # Create your views here.
 def main_page(request):
