@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+<html>
+<head>
+    <title> gallery</title>
+</head>
+{% block content %}
+<style>
+.container img {
+    filter: grayscale(100%);
+    transition: 1.3s;
+}
+.container img:hover{
+
+    transform:scale(1.1);
+}
+</style>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <img src="{% static 'images/IMG_20190217_131943 (1).jpg' %}" style="width: 100%;height:50%">
+        </div>
+        <div class="col-md-3">
+            <img src="{% static 'images/IMG_20190217_131943 (1).jpg' %}" style="width: 100%;height:50%">
+        </div>
+        <div class="col-md-3">
+            <img src="{% static 'images/IMG_20190217_131943 (1).jpg' %}" style="width: 100%;height:50%">
+        </div>
+    </div>
+    </div>
+</body>
+{% endblock %}
+
+</html>

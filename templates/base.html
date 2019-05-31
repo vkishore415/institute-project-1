@@ -1,0 +1,82 @@
+<html>
+<head>
+
+    <title> base file</title>
+</head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<style>
+    body{
+        background-color: wheat;
+    }
+    #ul1 {
+        list-style-type: none;
+        margin:0;
+        padding: 0;
+        overflow: hidden;
+        background-color: gold;
+
+    }
+    li a{
+        float:left;
+    }
+    li a{
+        float: left;
+        display: block;
+        color: black;
+        padding: 20px 30px;
+        text-decoration: none;
+        font-size: 20px;
+
+
+    }
+    .active{
+        background-color: crimson;
+    }
+    li a:hover{
+        background-color: darksalmon;
+        colour:black;
+    }
+    .footer{
+        position :fixed;
+        left:0;
+        bottom: 0;
+        width: 100%;
+        background-color: wheat;
+        colour:red;
+        text-align: center;
+    }
+    #h11{
+        font-size: 50px;
+        text-shadow: 3px 3px  3px black;
+        color: brown;
+        margin-top: -10px;
+
+    }
+</style>
+<body>
+<ul id="ul1">
+    <li><a href="/home/" class="active">Home</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/courses/">Courses</a></li>
+    <li><a href="/feedback/">Feedback</a></li>
+    <li><a href="/ourteam/">Our team</a></li>
+    <li><a href="/gallery/">Gallery</a></li>
+</ul>
+<center>
+<marquee><h1 id="h11">Welcome to DurgaSoft</h1></marquee>
+</center>
+{% block content %}
+{% endblock %}
+<footer class="footer">
+    <h3>Thank you </h3>
+</footer>
+
+
+</body>
+</html>

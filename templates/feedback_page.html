@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+<html>
+<head>
+    <title> feed back</title>
+</head>
+
+
+<body>
+{% block content %}
+
+<h1> this is our feedback page</h1>
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-3 col-md-6">
+            <form method="post">
+                {% csrf_token%}
+                {{ fform }}
+                <center>
+                    <input type="submit" value="send" class="btn-success">
+                    <input type="reset" value="reset" class="btn-danger">
+                </center>
+            </form>
+            </div>
+        <div>
+    <div>
+
+{% endblock %}
+
+</body>
+</html>

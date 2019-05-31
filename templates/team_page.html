@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+<html>
+<head>
+    <title> team</title>
+</head>
+
+{% block content %}
+<div class="team">
+<h1>our team</h1>
+<span class="sp1>"></span>
+    <div class="pics">
+        <a href="'#p1"><img src="{% static 'images/IMG_20190217_131943 (1).jpg' %}"></a>
+        <a href="'#p2"><img src="{% static 'images/IMG_20190217_131943 (1).jpg' %}"></a>
+        <a href="'#p3"><img src="{% static 'images/IMG_20190217_131943 (1).jpg' %}"></a>
+    </div>
+     <div class="section" id="p1">
+         <h1 class="name">kishore</h1>
+         <span class="sp1"></span>
+         <center><p> python kishore</p></center>
+     </div>
+    <div class="section" id="p2">
+         <h1 class="name">kishore</h1>
+         <span class="sp1"></span>
+         <center><p> python kishore</p></center>
+     </div>
+    <div class="section" id="p3">
+         <h1 class="name">kishore</h1>
+         <span class="sp1"></span>
+         <center><p> python kishore</p></center>
+     </div>
+</div>
+{% endblock %}
+<body>
+
+</body>
+</html>
